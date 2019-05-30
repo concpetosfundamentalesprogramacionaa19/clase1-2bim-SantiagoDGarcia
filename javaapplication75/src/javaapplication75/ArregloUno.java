@@ -9,16 +9,23 @@ package javaapplication75;
  *
  * @author reroes
  */
+//   \    >   =  < 
 public class ArregloUno {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
         
-        int[] c = new int[12];
+        int[] arr1 = new int[5];
         
+        arr1[3] = 2;
+        arr1[1+1] = 5+6;
+        arr1[2] = 11;
+        arr1[4] = 10;
+        
+        System.out.printf("%d + %d = %d\\n", arr1[1], arr1[4],arr1[1]+arr1[4]);
+        System.out.printf("El tamaño del arreglo es: %d\n", arr1.length);
         
     }
     
