@@ -22,17 +22,18 @@ public class Ejemplo31 {
         int[] datos = new int[6];
         String[] rangos = {"0-8", "8.1-12", "12.1-16", "16.1-19", "19.1-20", 
             "20-adelante"};
-        
+        // Se determina la variable notas como double para determinar decimales
         double notas;
         String verificacion;
         System.out.println("Ingrese la cantidad de notas que desea:");
         boolean opcion = true;
-        
+        // Se usa un Mientras para determinar cuando el usuario desea terminar
+        // de ingresar notas
         while (opcion == true) {
             
             System.out.println("Notas");
             notas = entrada.nextDouble();
-            
+            // condicional para que se determine las condiciones
           if(notas >= 0 && notas <=8){
             datos[0] = datos[0] + 1;
           }else{
@@ -54,7 +55,7 @@ public class Ejemplo31 {
             
            }}}}
           
-          
+          // Se pregunta al usuario si desea continuar y se evalua la condicion
         }
         System.out.printf("¿Desea ingresar mas notas?\n"
                             + "Escriba (si) para continuar o (no) para terminar"
@@ -69,7 +70,7 @@ public class Ejemplo31 {
          
         }                   
         System.out.printf("Resultados de notas ingresadas\nRangos:\n");
-        
+        // Se usa un for para imprimir los datos del array
         for(int i = 0; i<datos.length; i++){
             System.out.printf("%s = %d\n", rangos[i], datos[i]);    
         
