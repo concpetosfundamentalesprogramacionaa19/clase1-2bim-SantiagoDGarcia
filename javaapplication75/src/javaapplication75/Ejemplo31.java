@@ -41,22 +41,23 @@ public class Ejemplo31 {
                 datos[1] = datos[1] + 1;
             }else{
                 if(notas >=12.1 && notas <=16){
-                datos[2] = datos[2] + 1;
-            }else{
-                if(notas >=16.1 && notas <=19){
-                datos[3] = datos[3] + 1;
-            }else{
-                if(notas >=19.1 && notas <= 20){
-                datos[4] = datos[4] + 1;
+                    datos[2] = datos[2] + 1;
                 }else{
-                if(notas >20){
-                datos[5] = datos[5] + 1;
-            }  
-            
-           }}}}
-          
+                    if(notas >=16.1 && notas <=19){
+                        datos[3] = datos[3] + 1;
+                    }else{
+                        if(notas >=19.1 && notas <= 20){
+                            datos[4] = datos[4] + 1;
+                        }else{
+                            if(notas >20){
+                                datos[5] = datos[5] + 1;
+                            }  
+                        }
+                    }
+                 }
+              }
+           }
           // Se pregunta al usuario si desea continuar y se evalua la condicion
-        }
         System.out.printf("¿Desea ingresar mas notas?\n"
                             + "Escriba (si) para continuar o (no) para terminar"
                             + "\n");
@@ -69,7 +70,7 @@ public class Ejemplo31 {
                             }
          
         }                   
-        System.out.printf("Resultados de notas ingresadas\nRangos:\n");
+        System.out.printf("Notas ingresadas\nRangos:\n");
         // Se usa un for para imprimir los datos del array
         for(int i = 0; i<datos.length; i++){
             System.out.printf("%s = %d\n", rangos[i], datos[i]);    
